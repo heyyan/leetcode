@@ -1,0 +1,41 @@
+ <DataGrid ItemsSource="{Binding CurrentEntity.CatalogItemVendors, UpdateSourceTrigger=PropertyChanged}" 
+                      Margin="10,10,10,0" Height="126"
+                      Style="{StaticResource DataGridLines}"
+                      CellStyle="{StaticResource DataGridCellCenterAlign}"
+                      Background="Transparent" 
+                      SelectionMode="Single" 
+                      SelectionUnit="FullRow"
+                      CanUserAddRows="False"
+                      AutoGenerateColumns="False"
+                      VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Vendor" IsReadOnly="True"
+                                        Binding="{Binding VendorName, UpdateSourceTrigger=PropertyChanged}"/>
+                    <DataGridTextColumn Header="Unit of Measure" IsReadOnly="True"
+                                        Binding="{Binding UnitOfMeasure, UpdateSourceTrigger=PropertyChanged}"/>
+                    <DataGridTextColumn Header="Quantity" IsReadOnly="True"
+                                        Binding="{Binding Quantity, UpdateSourceTrigger=PropertyChanged}"/>
+                    <DataGridTextColumn Header="Price" IsReadOnly="True"
+                                        Binding="{Binding Price, UpdateSourceTrigger=PropertyChanged}"/>
+                    <DataGridTextColumn Header="Contract Number" IsReadOnly="True"
+                                        Binding="{Binding ContractNumber, UpdateSourceTrigger=PropertyChanged}"/>
+                    <DataGridTextColumn Header="SKU" IsReadOnly="True"
+                                        Binding="{Binding SKU, UpdateSourceTrigger=PropertyChanged}"/>
+                    <DataGridTemplateColumn Header="Primary">
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <CheckBox IsChecked="{Binding IsPrimaryVendor, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}"
+                                          IsEnabled="{Binding DataContext.FormEnabled,RelativeSource={RelativeSource 
+                                                            FindAncestor,
+                                                            AncestorType={x:Type UserControl}}}"
+                                          VerticalAlignment="Center" HorizontalAlignment="Center"
+                                          Command="{Binding DataContext.SetPrimaryVendorCommand,
+                                                            RelativeSource={RelativeSource 
+                                                            FindAncestor,
+                                                            AncestorType={x:Type UserControl}}}"
+                                          CommandParameter="{Binding}"/>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+                </DataGrid.Columns>
+            </DataGrid>
