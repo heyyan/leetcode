@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using leetcode.Code;
+using leetcode;
 
 namespace leetcode
 {
@@ -9,9 +9,8 @@ namespace leetcode
     {
         static void Main(string[] args)
         {
-           var validParentheses = new ValidParentheses();
-           validParentheses.RunIsValidTest();
-
+            ZigZagConversion zz = new ZigZagConversion();
+            zz.RunConvertTest();
         }
     }
 }
