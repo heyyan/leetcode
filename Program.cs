@@ -9,8 +9,8 @@ namespace leetcode
     {
         static void Main(string[] args)
         {
-            ZigZagConversion zz = new ZigZagConversion();
-            zz.RunConvertTest();
+            StringtoIntegerATOI atoi = new StringtoIntegerATOI();
+            atoi.RunMyAtoiTest();
         }
     }
 }

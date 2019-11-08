@@ -4,7 +4,7 @@ namespace leetcode
 {
     public class LongestPalindromicSubstring
     {
-        private int lo, maxLen;
+        //private int lo, maxLen;
         public void RunLongestPalindromeTest()
         {
 
