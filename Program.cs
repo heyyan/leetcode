@@ -9,8 +9,8 @@ namespace leetcode
     {
         static void Main(string[] args)
         {
-            StringtoIntegerATOI atoi = new StringtoIntegerATOI();
-            atoi.RunMyAtoiTest();
+            StairsClimbing sc = new StairsClimbing();
+            sc.RunClimbTest();
         }
     }
 }
