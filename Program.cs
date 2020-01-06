@@ -9,8 +9,8 @@ namespace leetcode
     {
         static void Main(string[] args)
         {
-            StairsClimbing sc = new StairsClimbing();
-            sc.RunClimbTest();
+            CuttingRods cr = new CuttingRods();
+            cr.RunRevenueTest();
         }
     }
 }
