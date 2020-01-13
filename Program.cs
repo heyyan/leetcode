@@ -9,8 +9,8 @@ namespace leetcode
     {
         static void Main(string[] args)
         {
-            CuttingRods cr = new CuttingRods();
-            cr.RunRevenueTest();
+            ContainerWithMostWater mostWater = new ContainerWithMostWater();
+            mostWater.MaxAreaTest();
         }
     }
 }
