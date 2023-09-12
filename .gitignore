@@ -1,0 +1,24 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/bin/Debug/net7.0
+/.vs/leetcode/DesignTimeBuild
+/obj/Debug/net7.0
+/obj/Debug/netcoreapp3.0/.NETCoreApp,Version=v3.0.AssemblyAttributes.cs
+/obj/Debug/netcoreapp3.0/apphost.exe
+/obj/Debug/netcoreapp3.0/leetcode.assets.cache
+/obj/Debug/netcoreapp3.0/leetcode.GeneratedMSBuildEditorConfig.editorconfig
+/obj/leetcode.csproj.nuget.dgspec.json
+/obj/leetcode.csproj.nuget.g.props
+/obj/leetcode.csproj.nuget.g.targets
+/obj/project.assets.json
+/obj/project.nuget.cache
+/.vs/leetcode/FileContentIndex/afbe05fe-104a-451b-85ce-211ecf7b292b.vsidx
+/.vs/leetcode/FileContentIndex/be0cafdc-61f8-4dbd-8cf2-17a62d641a68.vsidx
+/.vs/leetcode/FileContentIndex/1cc2d54d-f013-41a1-ac45-e30f5fd0e7d1.vsidx
+*.vsidx
+/.vs/leetcode/v17/.futdcache.v2
+*.suo
+/.vs/ProjectEvaluation/leetcode.metadata.v7.bin
+/.vs/ProjectEvaluation/leetcode.projects.v7.bin

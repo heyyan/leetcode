@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using leetcode;
+﻿using leetcode.AlgoExpert.Easy;
 
 namespace leetcode
 {
@@ -9,8 +6,8 @@ namespace leetcode
     {
         static void Main(string[] args)
         {
-            ContainerWithMostWater mostWater = new ContainerWithMostWater();
-            mostWater.MaxAreaTest();
+            var variable = new FindClosestValueInBinarySearchTrees();
+            variable.RunSolution();
         }
     }
 }
