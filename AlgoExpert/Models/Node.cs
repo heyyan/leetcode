@@ -1,12 +1,12 @@
 ﻿namespace leetcode.AlgoExpert.Models
 {
-    public class Node
+    public class Node<T>
     {
-        public int Data;
-        public Node Left;
-        public Node Right;
+        public T Data;
+        public Node<T> Left;
+        public Node<T> Right;
 
-        public Node(int data)
+        public Node(T data)
         {
             Data = data;
             Left = null;

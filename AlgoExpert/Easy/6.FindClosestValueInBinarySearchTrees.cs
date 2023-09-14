@@ -24,7 +24,7 @@ namespace leetcode.AlgoExpert.Easy
         private int GetFindClosestValueInBinarySearchTrees(BinarySearchTree bst, int value)
         {
             int closest = int.MaxValue;
-            Node currentNode = bst.root;
+            Node<int> currentNode = bst.root;
             while (currentNode != null)
             {
                 if (Math.Abs(currentNode.Data - value) < Math.Abs(closest - value))
@@ -52,7 +52,7 @@ namespace leetcode.AlgoExpert.Easy
             return FindClosestValueInBstHelper(tree.root, target, int.MaxValue);
         }
 
-        private int FindClosestValueInBstHelper(Node node, int target, int closest)
+        private int FindClosestValueInBstHelper(Node<int> node, int target, int closest)
         {
             if (node == null)
             {

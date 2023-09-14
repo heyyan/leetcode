@@ -1,14 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace leetcode.AlgoExpert.Models
+﻿namespace leetcode.AlgoExpert.Models
 {
     public class BinarySearchTree
     {
-        public Node root;
+        public Node<int> root;
         public BinarySearchTree()
         {
             root = null;
@@ -19,11 +13,11 @@ namespace leetcode.AlgoExpert.Models
             root = InsertRec(root, data);
         }
 
-        private Node InsertRec(Node root, int data)
+        private Node<int> InsertRec(Node<int> root, int data)
         {
             if (root == null)
             {
-                root = new Node(data);
+                root = new Node<int>(data);
                 return root;
             }
 
@@ -43,7 +37,7 @@ namespace leetcode.AlgoExpert.Models
             return SearchRec(root, data);
         }
 
-        private bool SearchRec(Node root, int data)
+        private bool SearchRec(Node<int> root, int data)
         {
             if (root == null)
             {

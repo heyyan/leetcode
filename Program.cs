@@ -1,4 +1,5 @@
 ﻿using leetcode.AlgoExpert.Easy;
+using leetcode.HackerEarth;
 
 namespace leetcode
 {
@@ -6,7 +7,7 @@ namespace leetcode
     {
         static void Main(string[] args)
         {
-            var variable = new FindClosestValueInBinarySearchTrees();
+            var variable = new MaxPointsOnALine();
             variable.RunSolution();
         }
     }
