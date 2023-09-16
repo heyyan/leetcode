@@ -7,7 +7,7 @@ namespace leetcode
     {
         static void Main(string[] args)
         {
-            var variable = new MaxPointsOnALine();
+            var variable = new GoodPairing();
             variable.RunSolution();
         }
     }
