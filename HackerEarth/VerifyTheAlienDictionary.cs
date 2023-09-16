@@ -20,16 +20,34 @@ namespace leetcode.HackerEarth
 
         public void RunSolution()
         {
-            var result = GetVerifyTheAlienDictionary("HECABDFGIJKLMNOPQRSTUVWXYZ", "HACKER");
+           // var result = GetVerifyTheAlienDictionary(new List<string> { "HACKER", "EARTHS", "CODEEXPLAINED" }, "HECABDFGIJKLMNOPQRSTUVWXYZ");
+            var result = GetVerifyTheAlienDictionary(new List<string> { "HACKER", "HACKER", "HACKERED" }, "HECABDFGIJKLMNOPQRSTUVWXYZ");
 
         }
 
-        private bool GetVerifyTheAlienDictionary(string key, string str)
+        private bool GetVerifyTheAlienDictionary(List<string> words, string order)
         {
-            Dictionary<char,int> hm = new Dictionary<char,int>();
-            for (int i = 0; i < key.Length; i++) 
+            Dictionary<char, int> orderInd = new Dictionary<char, int>();
+            for (int i = 0; i < order.Length; i++)
             {
-                hm.Add(key[i], i);
+                orderInd.Add(order[i], i);
+            }
+            for (int i = 0; i < words.Count - 1; i++)
+            {
+                string w1 = words[i];
+                string w2 = words[i + 1];
+
+                for (int j = 0; j< Math.Min(w1.Length, w2.Length);j++)
+                {
+                    if (w1[j] != w2[j])
+                    {
+                        if (orderInd[w1[j]] > orderInd[w2[j]])
+                        {
+                            return false;
+                        }
+                        break;
+                    }
+                }
             }
 
             return true;

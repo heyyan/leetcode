@@ -7,7 +7,7 @@ namespace leetcode
     {
         static void Main(string[] args)
         {
-            var variable = new GoodPairing();
+            var variable = new IntersectionOf3SortedArrays();
             variable.RunSolution();
         }
     }
