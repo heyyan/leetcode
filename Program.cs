@@ -1,4 +1,5 @@
 ﻿using leetcode.AlgoExpert.Easy;
+using leetcode.Blind_75_LeetCode;
 using leetcode.HackerEarth;
 
 namespace leetcode
@@ -7,7 +8,7 @@ namespace leetcode
     {
         static void Main(string[] args)
         {
-            var variable = new IntersectionOf3SortedArrays();
+            var variable = new Blind_75_LeetCode.CoinChange2();
             variable.RunSolution();
         }
     }
