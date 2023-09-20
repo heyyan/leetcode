@@ -15,12 +15,70 @@ namespace leetcode.Blind_75_LeetCode
         // explanation The longes increasing subsequence is [2,3,7,101], therefor the length is 4
         public void RunSolution()
         {
-            var result = Change2(5, new int[] { 1, 2, 5 });
+            var result = GetLongestIncreasingSubsequence(new int[] { 10, 9, 2, 5, 3, 7, 101, 18 });
         }
 
-        private object Change2(int v, int[] ints)
+        private int GetLongestIncreasingSubsequence(int[] nums)
         {
-            throw new NotImplementedException();
+            int[] lis = new int[nums.Length];
+            Array.Fill(lis, 1);
+
+            for (int i = nums.Length - 1; i >= 0; i--)
+            {
+                for (int j = i + 1; j < nums.Length - 1; j++)
+                {
+                    if (nums[i] < nums[j])
+                    {
+                        lis[i] = Math.Max(lis[i], 1 + lis[j]);
+                    }
+                }
+            }
+            return lis.Max();
+        }
+
+        public int LengthOfLIS(int[] nums)
+        {
+            var answers = new int[nums.Length];
+            for (int i = nums.Length - 1; i >= 0; i--)
+            {
+                answers[i] = 1;
+                for (int j = i + 1; j < nums.Length; j++)
+                {
+                    if (nums[i] < nums[j] && answers[i] < 1 + answers[j])
+                    {
+                        answers[i] = 1 + answers[j];
+                    }
+                }
+            }
+            return answers.Max();
+        }
+
+        public int LengthOfLIS2(int[] nums)
+        {
+            int[] LIS = new int[nums.Length];
+            for (int i = 0; i < nums.Length; i++)
+            {
+                LIS[i] = 1;
+            }
+
+            for (int i = nums.Length - 1; i >= 0; i--)
+            {
+                for (int j = i + 1; j < nums.Length; j++)
+                {
+                    if (nums[i] < nums[j])
+                    {
+                        LIS[i] = Math.Max(LIS[i], 1 + LIS[j]);
+                    }
+                }
+            }
+
+            int maxLength = 0;
+            for (int i = 0; i < nums.Length; i++)
+            {
+                maxLength = Math.Max(maxLength, LIS[i]);
+            }
+
+            return maxLength;
         }
     }
 }

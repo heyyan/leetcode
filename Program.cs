@@ -8,7 +8,7 @@ namespace leetcode
     {
         static void Main(string[] args)
         {
-            var variable = new Blind_75_LeetCode.CoinChange2();
+            var variable = new Blind_75_LeetCode.CloneGraph();
             variable.RunSolution();
         }
     }
