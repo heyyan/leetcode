@@ -5,4 +5,10 @@
     <TargetFramework>net7.0</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="NeetCode\Easy\" />
+    <Folder Include="NeetCode\Medium\" />
+    <Folder Include="NeetCode\Hard\" />
+  </ItemGroup>
+
 </Project>
