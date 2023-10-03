@@ -1,4 +1,5 @@
 ﻿using leetcode.AlgoExpert.Easy;
+using leetcode.AlgoExpert.Medium;
 using leetcode.Blind_75_LeetCode;
 using leetcode.HackerEarth;
 using leetcode.HackerRank.Taptapsend;
@@ -9,7 +10,7 @@ namespace leetcode
     {
         static void Main(string[] args)
         {
-            var variable = new RemoveDuplicatesFromLinkedList();
+            var variable = new MoveElementToEnd();
             variable.RunSolution();
         }
     }
