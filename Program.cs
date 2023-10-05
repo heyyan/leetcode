@@ -10,7 +10,7 @@ namespace leetcode
     {
         static void Main(string[] args)
         {
-            var variable = new MoveElementToEnd();
+            var variable = new ValidateBinarySearchTree();
             variable.RunSolution();
         }
     }
