@@ -6,7 +6,7 @@ namespace leetcode
     {
         static void Main(string[] args)
         {
-            var variable = new ReconstructBST();
+            var variable = new FindSuccessor();
             variable.RunSolution();
         }
     }
