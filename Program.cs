@@ -6,7 +6,7 @@ namespace leetcode
     {
         static void Main(string[] args)
         {
-            var variable = new FindSuccessor();
+            var variable = new MaxSubsetSunNoAdjacent();
             variable.RunSolution();
         }
     }
