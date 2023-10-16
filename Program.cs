@@ -6,7 +6,7 @@ namespace leetcode
     {
         static void Main(string[] args)
         {
-            var variable = new MaxSubsetSunNoAdjacent();
+            var variable = new NumberOfWaysToTraverseGraph();
             variable.RunSolution();
         }
     }
