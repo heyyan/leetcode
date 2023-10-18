@@ -6,7 +6,7 @@ namespace leetcode
     {
         static void Main(string[] args)
         {
-            var variable = new NumberOfWaysToTraverseGraph();
+            var variable = new YoungestCommonAncestor();
             variable.RunSolution();
         }
     }
