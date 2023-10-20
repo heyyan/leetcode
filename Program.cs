@@ -6,7 +6,7 @@ namespace leetcode
     {
         static void Main(string[] args)
         {
-            var variable = new YoungestCommonAncestor();
+            var variable = new RemoveIslands();
             variable.RunSolution();
         }
     }
