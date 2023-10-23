@@ -6,7 +6,7 @@ namespace leetcode
     {
         static void Main(string[] args)
         {
-            var variable = new RemoveIslands();
+            var variable = new MiniumPassesOfMatrix();
             variable.RunSolution();
         }
     }
