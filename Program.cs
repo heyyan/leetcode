@@ -6,7 +6,7 @@ namespace leetcode
     {
         static void Main(string[] args)
         {
-            var variable = new MiniumPassesOfMatrix();
+            var variable = new MinHeapConstruction();
             variable.RunSolution();
         }
     }
