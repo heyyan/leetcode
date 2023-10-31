@@ -6,7 +6,7 @@ namespace leetcode
     {
         static void Main(string[] args)
         {
-            var variable = new MinHeapConstruction();
+            var variable = new SumOfLinkedLists();
             variable.RunSolution();
         }
     }
