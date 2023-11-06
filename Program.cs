@@ -6,7 +6,7 @@ namespace leetcode
     {
         static void Main(string[] args)
         {
-            var variable = new SumOfLinkedLists();
+            var variable = new PowerSet();
             variable.RunSolution();
         }
     }
