@@ -6,7 +6,7 @@ namespace leetcode
     {
         static void Main(string[] args)
         {
-            var variable = new PowerSet();
+            var variable = new SearchInSortedMatrix();
             variable.RunSolution();
         }
     }
