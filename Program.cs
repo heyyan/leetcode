@@ -6,7 +6,7 @@ namespace leetcode
     {
         static void Main(string[] args)
         {
-            var variable = new SearchInSortedMatrix();
+            var variable = new SunsetViews();
             variable.RunSolution();
         }
     }
