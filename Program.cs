@@ -6,7 +6,7 @@ namespace leetcode
     {
         static void Main(string[] args)
         {
-            var variable = new SunsetViews();
+            var variable = new NextGraterElement();
             variable.RunSolution();
         }
     }
