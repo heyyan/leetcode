@@ -6,7 +6,7 @@ namespace leetcode
     {
         static void Main(string[] args)
         {
-            var variable = new NextGraterElement();
+            var variable = new ReverseWordsInString();
             variable.RunSolution();
         }
     }
