@@ -13,8 +13,49 @@ namespace leetcode.AlgoExpert.Medium
         // output Best! the is AlgoExpert
         public void RunSolution()
         {
-            var result = GetReverseWordsInStringInPlace4("AlgoExpert is the Best!");
+            var result = GetReverseWordsInStringInPlace5("AlgoExpert is the Best!");
             // var result = GetReverseWordsInStringInPlace3("    a  b ");
+        }
+
+
+
+        private string GetReverseWordsInStringInPlace5(string strings)
+        {
+            var characters = strings.ToCharArray().ToList();
+            reverseListRange(characters, 0, characters.Count - 1);
+
+            int startOfWord = 0;
+
+            while (true)
+            {
+                int endOfWord = startOfWord;
+                while (endOfWord < characters.Count && characters[endOfWord] != ' ')
+                {
+                    endOfWord++;
+                }
+                if (endOfWord == characters.Count)
+                {
+                    reverseListRange(characters, startOfWord, characters.Count - 1);
+                    break;
+                }
+
+                reverseListRange(characters, startOfWord, endOfWord - 1);
+                startOfWord = endOfWord + 1;
+            }
+
+            return string.Join("", characters);
+        }
+
+        private void reverseListRange(List<char> characters, int start, int end)
+        {
+            while (start < end)
+            {
+                var temp = characters[start];
+                characters[start] = characters[end];
+                characters[end] = temp;
+                start++;
+                end--;
+            }
         }
 
         private string GetReverseWordsInStringInPlace4(string strings)
@@ -29,7 +70,8 @@ namespace leetcode.AlgoExpert.Medium
                 {
                     words.Add(strings.Substring(startOfWord, idx - startOfWord));
                     startOfWord = idx;
-                }else if (strings[startOfWord] == ' ')
+                }
+                else if (strings[startOfWord] == ' ')
                 {
                     words.Add(" ");
                     startOfWord = idx;
@@ -39,7 +81,7 @@ namespace leetcode.AlgoExpert.Medium
             words.Add(strings.Substring(startOfWord, strings.Length - startOfWord));
 
             reverseList(words);
-            return string.Join("",words);
+            return string.Join("", words);
         }
 
         private void reverseList(List<string> words)

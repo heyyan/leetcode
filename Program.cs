@@ -6,7 +6,7 @@ namespace leetcode
     {
         static void Main(string[] args)
         {
-            var variable = new ReverseWordsInString();
+            var variable = new SuffixTrieConstruction();
             variable.RunSolution();
         }
     }
